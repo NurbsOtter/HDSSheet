@@ -24,5 +24,23 @@ function onSelectFamily(){
 				speciesSelect.options.add(newOpt);
 			}
 		break;
+		case "felidae":
+			for (var i = 0; i < species.feline.length;i++){
+				var newOpt = new Option(species.feline[i],species.feline[i],false,false);
+				speciesSelect.options.add(newOpt);
+			}
+		break;
+		case "reptilia":
+			for (var i = 0; i < species.reptilia.length;i++){
+				var newOpt = new Option(species.reptilia[i],species.reptilia[i],false,false);
+				speciesSelect.options.add(newOpt);
+			}
+		break;
+		case "avialae":
+			for (var i = 0; i < species.avialae.length;i++){
+				var newOpt = new Option(species.avialae[i],species.avialae[i],false,false);
+				speciesSelect.options.add(newOpt);
+			}
+		break;
 	}
 }
