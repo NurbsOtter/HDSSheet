@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<title>HC SVNT Draconis Character Sheet</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="formFiller.js"></script>
+</HEAD>
+</BODY>
+<div id="generalStats" class="col-md-6">
+<form id="generalForm">
+<div class="form-group">
+<label for="charid">Character Name:</label> <input type="text" id="charid" class="form-control"></input>
+<label for="age">Age:</label> <input type="text" id="age" class="form-control"></input>
+<label for="height">Height: </label><input type="text" id="height" class="form-control"></input>
+<label for="eyes">Eyes:</label> <input type="text" id="eyes" class="form-control"></input>
+<label for="family">Family: </label><select class="form-control" onChange="onSelectFamily()" id="familySelect">
+	<option value="canidae">Canidae</option>
+	<option value="felidae">Felidae</option>
+	<option value="reptilia">Reptilia</option>
+	<option value="mustelidae">Mustelidae</option>
+	<option value="avialae">Avialae</option>
+</select>
+<label for="species">Species:</label><select class="form-control" id="speciesSelect">
+	<option value="Dog">Dog</option>
+	<option value="Fox">Fox</option>
+	<option value="Wolf">Wolf</option>
+	<option value="Coyote">Coyote</option>
+	<option value="Jackal">Jackal</option>
+</select>
+</form>
+</div>
+</div>
+</HTML>
