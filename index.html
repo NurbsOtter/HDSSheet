@@ -20,11 +20,11 @@
 <label for="height">Height: </label><input type="text" id="height" class="form-control"></input>
 <label for="eyes">Eyes:</label> <input type="text" id="eyes" class="form-control"></input>
 <label for="family">Family: </label><select class="form-control" onChange="onSelectFamily()" id="familySelect">
-	<option value="canidae">Canidae</option>
-	<option value="felidae">Felidae</option>
-	<option value="reptilia">Reptilia</option>
-	<option value="mustelidae">Mustelidae</option>
-	<option value="avialae">Avialae</option>
+	<option value="0">Canidae</option>
+	<option value="1">Felidae</option>
+	<option value="2">Reptilia</option>
+	<option value="3">Mustelidae</option>
+	<option value="4">Avialae</option>
 </select>
 <label for="species">Species:</label><select class="form-control" id="speciesSelect">
 	<option value="Dog">Dog</option>
@@ -32,6 +32,11 @@
 	<option value="Wolf">Wolf</option>
 	<option value="Coyote">Coyote</option>
 	<option value="Jackal">Jackal</option>
+</select>
+<label for="morphism">Morphism:</label><select class="form-control" id="morphismSelect">
+	<option value="Plantigrade">Plantigrade</option>
+	<option value="Digitigrade">Digitigrade</option>
+	<option value="Atypical Patterning">Atypical Patterning</option>
 </select>
 </form>
 </div>

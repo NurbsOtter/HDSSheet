@@ -12,33 +12,33 @@ function onSelectFamily(){
 	console.log(selectedFamily);
 	speciesSelect.options.length = 0;//Empty out da list!
 	switch (selectedFamily){
-		case "mustelidae":
+		case "3":
 			for (var i = 0; i < species.mustelidae.length;i++){
-				var newOpt = new Option(species.mustelidae[i],species.mustelidae[i],false,false)
+				var newOpt = new Option(species.mustelidae[i],i,false,false)
 				speciesSelect.options.add(newOpt);
 			}
 		break;
-		case "canidae":
+		case "0":
 			for (var i = 0; i < species.canine.length;i++){
-				var newOpt = new Option(species.canine[i],species.canine[i],false,false);
+				var newOpt = new Option(species.canine[i],i,false,false);
 				speciesSelect.options.add(newOpt);
 			}
 		break;
-		case "felidae":
+		case "1":
 			for (var i = 0; i < species.feline.length;i++){
-				var newOpt = new Option(species.feline[i],species.feline[i],false,false);
+				var newOpt = new Option(species.feline[i],i,false,false);
 				speciesSelect.options.add(newOpt);
 			}
 		break;
-		case "reptilia":
+		case "2":
 			for (var i = 0; i < species.reptilia.length;i++){
-				var newOpt = new Option(species.reptilia[i],species.reptilia[i],false,false);
+				var newOpt = new Option(species.reptilia[i],i,false,false);
 				speciesSelect.options.add(newOpt);
 			}
 		break;
-		case "avialae":
+		case "4":
 			for (var i = 0; i < species.avialae.length;i++){
-				var newOpt = new Option(species.avialae[i],species.avialae[i],false,false);
+				var newOpt = new Option(species.avialae[i],i,false,false);
 				speciesSelect.options.add(newOpt);
 			}
 		break;
